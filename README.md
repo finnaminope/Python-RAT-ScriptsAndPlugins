@@ -1,4 +1,7 @@
 # Python-RAT
+
+THIS REPO IS ARCHIVED AND WILL NO LONGER BE UPDATED.
+
 Advanced Remote Administration tool for Windows Systems written in pure Python
 
 ## Disclamer
